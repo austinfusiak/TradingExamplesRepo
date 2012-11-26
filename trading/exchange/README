@@ -1,0 +1,24 @@
+
+Title : 
+	Sample Exchange / Matching Engine 
+
+Author : 
+	Austin Fusiak
+
+Description: 
+	This project is a sample exchange that can be used for a variety of applications.  This project was ment as a proof of concept and not built strictly for performance.  It currently handles both market and limits orders along with the ability to cancel orders that are currently in the order book.  In addition there is an simulations that can process historical trade prices as market orders for testing strategies with historical data. 
+
+To Do:
+	Increase test cases for full market fills and responces to user 
+	Better inform application that orders failed validation or state changes such as a cancel order was succesfull
+	Reduce duplication of similar functionality ( Buy/Sell order symetry )  
+	Be able to update applications regarding the current order book 
+	Be able to update applications that could be used as a gui for monitoring the current order book and current top of book 
+	Create a RESTful interface so other applications/services can send and recieve data from the exchange service
+
+Finished: 
+	Be able to handle cancel orders
+	Remove assert statements in exchange.py  replace with throws 
+	Improve Logging to use python logging module 
+	Refactor order book into its own class ( other functionallity can be used in other projects ) 
+
